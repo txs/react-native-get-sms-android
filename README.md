@@ -1,3 +1,75 @@
+# SMSocial
+
+## 環境設定
+
+可以參考環境設定的官方 [Doc](https://reactnative.dev/docs/environment-setup)
+
+我們這次要用到的是 SMS 的讀取功能，Expo 經過網路上的開發者鬼哭神嚎後，還是不支援，所以我們只好自己用難用的 react-native-cli，我們在開發工具的 Tab 要選擇 React Native Cli Quickstart
+
+因為我們小組的夥伴大多都用 Macbook ，所以上面的官方文檔要選擇 MacOS 與 Android
+
+![官網的 Tab 環境示意圖](./images/setup-env.png)
+
+1. 先到本 repo 的 example 內
+2. 全局安裝 react-native-cli 才可以用 react-native 指令
+3. 先裝 [Android Studio](https://developer.android.com/studio)
+4. 再裝 JDK - Java Development Kit
+   
+   ```bash
+   brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+   ```
+5. 記得要 Configure the ANDROID_HOME environment variable
+
+   
+> Add the following lines to your $HOME/.bash_profile or $HOME/.bashrc (if you are using zsh then ~/.zprofile or ~/.zshrc) config file:
+
+    ```bash
+    export ANDROID_HOME=$HOME/Library/Android/sdk
+    export PATH=$PATH:$ANDROID_HOME/emulator
+    export PATH=$PATH:$ANDROID_HOME/tools
+    export PATH=$PATH:$ANDROID_HOME/tools/bin
+    export PATH=$PATH:$ANDROID_HOME/platform-tools
+    ```
+
+5.  記得裝 watchman
+   
+    ```bash
+    brew install watchman
+    ```
+6.  同意所有 android license
+
+```bash
+./sdkmanager --licenses
+```
+
+6.  打開 android 虛擬機
+7.  這時候 npx react-native run-android 應該就可以跑起來了
+
+## 跑 Android 模擬器
+```bash
+npx react-native run-android
+```
+
+就會開始裝 gradle
+
+## Andorid studio 找不到 AVD
+
+解法 ctrl+shift+a 打 avd 就可以叫出來 (Android Studio 超爛)
+https://stackoverflow.com/questions/47173708/why-avd-manager-options-are-not-showing-in-android-studio
+
+
+## Bug
+
+1. fsevents is not available
+
+    解法
+
+    ```bash
+    brew install watchman
+    ```
+
+2. 
+
 # react-native-get-sms-android
 
 Module that supports interaction with the Messaging API on Android

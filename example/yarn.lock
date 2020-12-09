@@ -3929,10 +3929,10 @@ react-is@^16.6.3, react-is@^16.8.1:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
 
-"react-native-get-sms-android@github:briankabiro/react-native-get-sms-android":
+react-native-get-sms-android@^2.1.0:
   version "2.1.0"
-  uid b27bda379569a7d4930b68d13e20c4e0c5efbd73
-  resolved "https://codeload.github.com/briankabiro/react-native-get-sms-android/tar.gz/b27bda379569a7d4930b68d13e20c4e0c5efbd73"
+  resolved "https://registry.yarnpkg.com/react-native-get-sms-android/-/react-native-get-sms-android-2.1.0.tgz#0b04bd017f6e7f8a3c1ac9e61960e73d76750be0"
+  integrity sha512-yYPlJ4DkuC9HnUL0ni644pDjRFnSQkdGHowIY5ab56YFDKHIEZ1rKuBCEbCWF0HALyvH6qCyfdHqwpzTtIj97w==
 
 react-native@0.58.6:
   version "0.58.6"
